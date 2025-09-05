@@ -1,0 +1,12 @@
+A module is a file containing python code, It may contain functions, classes and other stuff.
+
+To use the functions of a module, write: 
+  'import <Name of the module>'.
+
+Also if you want to access some fuctions or classes from a module write:
+  'from <Name of the module> import <Name of the function or classes>'
+By doing so you don't have to initialize ( <Name of the module>.<Name of the function or classes> ) the module.
+You just have to write the name of the function or class to perform the task.
+
+Python have a list of built-in modules, If you need to access them write: 'help("modules")' and it will print all 
+the modules for us.
