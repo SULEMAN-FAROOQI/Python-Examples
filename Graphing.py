@@ -243,7 +243,24 @@ A histogram is a graph showing frequency distributions. It is a graph showing th
 In Matplotlib, we use the hist() function to create histograms. The hist() function will use an array of numbers to create a histogram, 
 the array is sent into the function as an argument. 
 
-numpy.random.uniform(starting point, x-intervals, y-intervals)
+variable = numpy.random.uniform(Mean, x-intervals, y-intervals)
+hist(variable, n)
+
+In probability theory this kind of data distribution is known as the normal data distribution, or the Gaussian data distribution, 
+after the mathematician Carl Friedrich Gauss who came up with the formula of this data distribution.
+
+Mean: This represents the mean of the normal distribution. It specifies the center of the distribution, where the peak of the bell 
+curve is located.
+
+x-intervals(width): This represents the standard deviation of the normal distribution. It determines the spread or "width" of the distribution,
+indicating how much the values deviate from the mean. A larger standard deviation results in a flatter, wider bell curve, while a 
+smaller standard deviation results in a taller, narrower one.
+
+y-intervals(height): This specifies the number of samples to draw from the distribution. In this case, 100,000 random numbers will 
+be generated, following a normal distribution with a mean of 5.0 and a standard deviation of 1.0
+
+A normal distribution graph is also known as the bell curve because of it's characteristic shape of a bell.
+
 hist(variable, num of bars)
 
 Example:
@@ -251,7 +268,7 @@ Example:
 import numpy
 import matplotlib.pyplot as plt
 
-x = numpy.random.uniform(0.0, 5.0, 100000)
+x = numpy.random.uniform(5.0, 1.0, 100000)
 
 plt.hist(x, 100)
 plt.show()
