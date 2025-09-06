@@ -261,8 +261,7 @@ plt.show()
 S: This represents the point from where the value starts.
 
 x-intervals(width): This represents the standard deviation of the normal distribution. It determines the spread or "width" of the distribution,
-indicating how much the values deviate from the mean. A larger standard deviation results in a flatter, wider bell curve, while a 
-smaller standard deviation results in a taller, narrower one.
+indicating how much the values deviate from the starting point.
 
 y-intervals(height): This specifies the number of samples to draw from the distribution. In this case, 100,000 random numbers will 
 be generated, following a uniform distribution with a starting point of 0.0 and a standard deviation of 5.0
@@ -297,7 +296,7 @@ plt.show()
 Peak value: It specifies the center of the distribution, where the peak of the bell curve is located.
 
 x-intervals(width): This represents the standard deviation of the normal distribution. It determines the spread or "width" of the distribution,
-indicating how much the values deviate from the mean. A larger standard deviation results in a flatter, wider bell curve, while a 
+indicating how much the values deviate from the peak value. A larger standard deviation results in a flatter, wider bell curve, while a 
 smaller standard deviation results in a taller, narrower one.
 
 y-intervals(height): This specifies the number of samples to draw from the distribution. In this case, 100,000 random numbers will 
