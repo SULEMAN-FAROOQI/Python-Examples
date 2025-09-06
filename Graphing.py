@@ -240,8 +240,8 @@ plt.show()
 '''
 
 A histogram is a graph showing frequency distributions and the number of observations within each given interval.
-In Matplotlib, we use the hist() function to create histograms. The hist() function will use an array of numbers to create a histogram, 
-the array is sent into the function as an argument.
+In Matplotlib, we use the hist() function to create histograms. The hist() function will use an array of numbers to create
+a histogram, the array is sent into the function as an argument.
 
 Example (Uniform data distribution):
 
