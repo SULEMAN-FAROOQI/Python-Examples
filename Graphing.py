@@ -243,31 +243,6 @@ A histogram is a graph showing frequency distributions and the number of observa
 In Matplotlib, we use the hist() function to create histograms. The hist() function will use an array of numbers to create a histogram, 
 the array is sent into the function as an argument.
 
-'''
-
-# Uniform Data distribution using Histogram:
-
-'''
-
-The Python Program used to create an array where the values are concentrated around a given value will be:
-
-import numpy
-import matplotlib.pyplot as plt 
-
-variable = numpy.random.normal(S, x-intervals, y-intervals)
-hist(variable, n)
-plt.show()
-
-S: This represents the point from where the value starts.
-
-x-intervals(width): This represents the standard deviation of the normal distribution. It determines the spread or "width" of the distribution,
-indicating how much the values deviate from the starting point.
-
-y-intervals(height): This specifies the number of samples to draw from the distribution. In this case, 100,000 random numbers will 
-be generated, following a uniform distribution with a starting point of 0.0 and a standard deviation of 5.0
-
-n = Number of Bars
-
 Example (Uniform data distribution):
 
 import numpy
@@ -277,34 +252,6 @@ x = numpy.random.uniform(0.0, 5.0, 100000)
 
 plt.hist(x, 100)
 plt.show()
-
-'''
-
-# Normal Data Distribution using Histogram:
-
-'''
-
-The Python Program used to create an array where the values are concentrated around a given value will be:
-
-import numpy
-import matplotlib.pyplot as plt 
-
-variable = numpy.random.normal(Peak value, x-intervals, y-intervals)
-hist(variable, n)
-plt.show()
-
-Peak value: It specifies the center of the distribution, where the peak of the bell curve is located.
-
-x-intervals(width): This represents the standard deviation of the normal distribution. It determines the spread or "width" of the distribution,
-indicating how much the values deviate from the peak value. A larger standard deviation results in a flatter, wider bell curve, while a 
-smaller standard deviation results in a taller, narrower one.
-
-y-intervals(height): This specifies the number of samples to draw from the distribution. In this case, 100,000 random numbers will 
-be generated, following a normal distribution with a peak value of 5.0 and a standard deviation of 1.0.
-
-n = Number of Bars
-
-A normal distribution graph is also known as the bell curve because of it's characteristic shape of a bell.
 
 Example (Normal data distribution):
 
