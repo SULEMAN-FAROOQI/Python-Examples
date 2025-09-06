@@ -475,3 +475,29 @@ text.pack()
 notebook.mainloop()
 
 '''
+
+# Open A File:
+
+'''
+
+from tkinter import *
+from tkinter import filedialog
+
+FileOpener = Tk()
+
+def Open():
+    filepath = filedialog.askopenfilename(initialdir="C:\\Users\\dell\\Desktop\\DEVELOPMENT",
+                                          title="PY-Stuff",
+                                          filetypes=(("Text Files","*.txt"),("All Files","*.*")))
+    file = open(filepath,'r')
+    print(file.read())
+    file.close()
+
+Buton = Button(FileOpener,
+               text="Open",
+               command=Open)
+
+Buton.pack()
+FileOpener.mainloop()
+
+'''
