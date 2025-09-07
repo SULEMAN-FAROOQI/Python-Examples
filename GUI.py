@@ -501,3 +501,33 @@ Buton.pack()
 FileOpener.mainloop()
 
 '''
+
+# Save a File:
+
+'''
+
+from tkinter import * 
+from tkinter import filedialog
+
+savefile = Tk()
+
+def save():
+    file = filedialog.asksaveasfile(defaultextension=".txt",
+                                    initialdir="C:\\Users\\dell\\Desktop\\DESIGNING\\DOCUMENTS\\Circuits\\Arduino Extracted codes",
+                                    filetypes=(("Text Files", "*.txt"),("All Files","*.*")))
+    filetext = text.get(1,END)
+    file.write(filetext)
+    file.close()
+
+buton = Button(savefile,
+               text="Save",
+               command = save)
+text = Text(savefile)
+
+text.pack()
+buton.pack()
+savefile.mainloop()
+
+We can also use console window to input some text.
+
+'''
