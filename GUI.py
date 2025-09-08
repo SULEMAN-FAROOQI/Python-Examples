@@ -531,3 +531,38 @@ savefile.mainloop()
 We can also use console window to input some text.
 
 '''
+
+# How to make a Menubar:
+
+'''
+
+from tkinter import *
+
+def Openfile():
+    print("File has been opened")
+
+def savefile():
+    print("File has been saved")
+
+app = Tk()
+menubar = Menu(app)
+app.config(menu=menubar)
+
+filemenu = Menu(app, tearoff=0)
+menubar.add_cascade(label="File",menu=filemenu)
+filemenu.add_command(label="Open", command=Openfile)
+filemenu.add_command(label="Save", command=savefile)
+filemenu.add_separator()
+filemenu.add_command(label="Exit", command=quit)
+
+editmenu = Menu(app, tearoff=0)
+menubar.add_cascade(label="Edit", menu=menubar)
+editmenu.add_command(label="Cut")
+editmenu.add_command(label="Copy")
+editmenu.add_command(label="Paste")
+
+app.mainloop()
+
+Note: We can also add images and customize our commands, just like mentioned above.
+
+'''
