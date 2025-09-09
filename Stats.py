@@ -234,7 +234,7 @@ like this one: x + cos(x)
 For that you can use SciPy's optimize.root function. This function takes two required arguments:
 
 variable = root(func, initial value)
-print(variable.x) stores that value of x at which root was found.
+print(variable.x) : stores that value of x at which root was found.
 
 Example:
 
@@ -437,8 +437,7 @@ Skewness: A measure of symmetry in data. For normal distributions it is 0.
 If it is negative, it means the data is skewed left.
 If it is positive it means the data is skewed right.
 
-Kurtosis:
-A measure of weight of data.
+Kurtosis: A measure of weight of data.
 
 Positive kurtosis means heavy tailed.
 Negative kurtosis means lightly tailed.
