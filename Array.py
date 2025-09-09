@@ -98,7 +98,7 @@ print(arr[2] + arr[3])
 To access elements from 2-D arrays we can use comma separated integers representing the dimension and the index of the element.
 Think of 2-D arrays like a table with rows and columns, where the dimension represents the row and the index represents the column.
 
-variable[row, column], always remember computing starts comuting from 0th index.
+variable[row, column], always remember computer starts computing from 0th index.
 
 Example:
 
@@ -225,9 +225,6 @@ print(newarr.dtype)
 '''
 
 Example 1:
-
-Convert the following 1-D array with 12 elements into a 2-D array.
-The outermost dimension will have 4 arrays, each with 3 elements:
 
 import numpy as np
 
