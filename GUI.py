@@ -1,7 +1,5 @@
 # GRAPHICAL USER INTERFACE(GUI):
 
-# How to make a GUI:
-
 '''
 
 Here are some basic operations perform for making GUI of project wolfra.
@@ -42,7 +40,7 @@ We can also use variable.pack() function to see our label.
 
 '''
 
-# How to make Buttons:
+# Buttons:
 
 '''
 
@@ -115,7 +113,7 @@ We can also use variable.pack() function to see our CheckButton.
 
 '''
 
-# How to make RadioButtons:
+# RadioButtons:
 
 '''
 
@@ -180,7 +178,7 @@ foodapp.mainloop()
 
 '''
 
-# How to make a Scale:
+# Scale:
 
 '''
 
@@ -236,7 +234,7 @@ Tempsensor.mainloop()
 
 '''
 
-# How to make Listbox:
+# Listbox:
 
 '''
 
@@ -390,7 +388,7 @@ foodapp.mainloop()
 
 '''
 
-# How to make Messagebox::
+# Messagebox:
 
 '''
 
@@ -423,7 +421,7 @@ We can also change the icon of the message command to "warning", info etc.
 
 '''
 
-# How to set a Colorchosser:
+# Colorchosser:
 
 '''
 
@@ -446,7 +444,7 @@ bgchanger.mainloop()
 
 '''
 
-# How to make a Textarea:
+# Textarea:
 
 '''
 
@@ -532,7 +530,7 @@ We can also use console window to input some text.
 
 '''
 
-# How to make a Menubar:
+# Menubar:
 
 '''
 
@@ -564,5 +562,25 @@ editmenu.add_command(label="Paste")
 app.mainloop()
 
 Note: We can also add images and customize our commands, just like mentioned above.
+
+'''
+
+# Frames:
+
+'''
+
+from tkinter import *
+
+framing = Tk()
+
+frames = Frame(framing, width = 5, bg="light yellow")
+
+Button(frames, text = "UP", font=("aesthetic",20), bg="grey").pack()
+Button(frames, text = "DOWN", font=("aesthetic",20), bg="grey").pack(side=BOTTOM)
+Button(frames, text = "LEFT", font=("aesthetic",20), bg="grey").pack(side=LEFT)
+Button(frames, text = "RIGHT", font=("aesthetic",20), bg="grey").pack(side=RIGHT)
+
+frames.pack()
+framing.mainloop()
 
 '''
