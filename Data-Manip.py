@@ -63,6 +63,8 @@ manupilate our data.
 
 5. The variable.drop_duplicates(inplace = True) function will remove all the duplicates from the dataset.
 
+6. the variable.isna() function will tell you how many null values are in dataset.
+
 Example:
 
 import pandas as pd
