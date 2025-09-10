@@ -4,7 +4,9 @@
 
 NumPy is used for working with array. It is short for "Numerical Python". It also has functions for working in domain of linear algebra, 
 fourier transform, and matrices. NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and 
-manipulate them very efficiently. This behavior is called locality of reference in computer science
+manipulate them very efficiently. This behavior is called locality of reference in computer science.
+
+We can use variable.shape() function to know about the dimension of our matrix.
 
 '''
 
