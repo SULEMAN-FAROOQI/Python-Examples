@@ -295,3 +295,164 @@ plt.legend(title="Fruits")
 plt.show()
 
 '''
+
+# Customization of Graphs:
+
+'''
+
+The graphs are created by matplotlib.pyplot but are customized using seaborn module which works under matplotlib.pyplot.
+
+The seaborn.load_datasets() function provides quick access to a small number of example datasets. Use seaborn.get_dataset_names to see 
+a list of available datasets
+
+'''
+
+# Common plot types:
+
+# Visualizing statistical relationships:
+
+'''
+
+The relplot() function is function for showing the relationship between two variables, using scatterplot() or lineplot().
+
+Example(Scatter Plot):
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.relplot(data= datasets, x="total_bill", y = "tip", kind="scatter")
+plt.show()
+
+Example (Line plot):
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.relplot(data= datasets, x="total_bill", y = "tip", kind="line")
+plt.show()
+
+'''
+
+# Visualizing distributions:
+
+'''
+
+Seaborn offers several ways to visualize the distribution of a single variable. 
+
+1. Histogram: The histplot() function shows the frequency of observations within a specific bin. 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.histplot(data= datasets, x="total_bill")
+plt.show()
+
+2. Kernel Density Estimate (KDE) plot: A KDE plot shows the probability density of a variable using a continuous curve. 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.kdeplot(data= datasets, x="total_bill")
+plt.show()
+
+3. Combined distribution plot: The displot() function provides a figure-level interface for plotting distribution plots, 
+such as a histogram with a KDE. 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.displot(data=datasets, x='total_bill', kde=True)
+plt.show()
+
+'''
+
+# Visualizing categorical data:
+
+'''
+
+The catplot() function is a figure-level interface for plotting relationships between numerical and categorical variables. 
+
+1. Box plot: Box plots are useful for comparing the distribution of a quantitative variable across different categorical levels. 
+
+Example: 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.catplot(x='day', y='total_bill', kind='box', data=datasets)
+plt.show()
+
+2. Violin plot: A violin plot is an alternative to a box plot that shows the distribution of the data more clearly. 
+
+Example:
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.catplot(x='day', y='total_bill', kind='violin', data=datasets)
+plt.show()
+
+'''
+
+# Plotting Parameters:
+
+'''
+
+1. x = Variable Distribution on x-axis.
+2. y = Variable Distribution on y-axis.
+3. kind = kind of graph
+4. style: It uses different marker shapes on the same plot to show different categories within your data. 
+5. hue: It uses different colors on the same graph to show different categories within your data.
+6. row and col: They split your data into different subplots helping to compare different categories side-by-side
+
+Example:
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+datasets = sns.load_dataset("tips")
+print(datasets.head())
+
+sns.relplot(data= datasets, x="total_bill", y = "tip", 
+            hue = "smoker", style="smoker", kind="scatter"
+            col="time")
+plt.show()
+
+'''
