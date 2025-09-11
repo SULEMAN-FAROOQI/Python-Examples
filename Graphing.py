@@ -300,7 +300,8 @@ plt.show()
 
 '''
 
-The graphs are created by matplotlib.pyplot but are customized using seaborn module which works under matplotlib.pyplot.
+The graphs created by matplotlib are used to show relationship between two variables. By seaborn module, we can create
+graphs between different categories in a dataset containing more than one categories.
 
 The seaborn.load_datasets() function provides quick access to a small number of example datasets. Use seaborn.get_dataset_names to see 
 a list of available datasets
