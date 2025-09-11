@@ -584,3 +584,27 @@ frames.pack()
 framing.mainloop()
 
 '''
+
+# Window Within a Window:
+
+'''
+
+1. Toplevel() : It makes new window on top of the other window. If we close one window the other will be closed automatically.
+2. Tk() : It makes a totally new window. If we close one window the other will not be closed.
+3. variable.destroy(): It is used to destroy the old window.
+
+Example:
+
+from tkinter import *
+
+old = Tk()
+
+def New():
+    new = Tk()
+    old.destroy()
+
+Button(old, text="New Tab", command=New).pack()
+
+old.mainloop()
+
+'''
