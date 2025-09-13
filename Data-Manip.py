@@ -74,6 +74,15 @@ in our dataframe.
 
 9. We can use the variable.shape function to get the number of rows and columns in our dataframe made from our dataset.
 
+10. In some datasets, the data is defined in a different array and the labels are defined in a different array.
+Then we use the 'data' and 'columns' parameters to set the data and columns of our dataframe.
+
+dataframe = pd.DataFrame(data = dataset.x, columns=dataset.y)
+
+where,
+x is the array containing data
+y is the array containing labels
+
 Example:
 
 import pandas as pd
