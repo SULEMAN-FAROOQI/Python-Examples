@@ -608,3 +608,36 @@ Button(old, text="New Tab", command=New).pack()
 old.mainloop()
 
 '''
+
+# New Tabs:
+
+'''
+
+The expand and fill makes the tab fit the whole window.
+
+Example:
+
+from tkinter import *
+from tkinter import ttk
+from notebook import *
+
+drome = Tk()
+drome.title("Drome")
+drome.geometry("600x400")
+drome.config(bg="light yellow")
+
+note = ttk.Notebook(drome)
+
+tab1 = Frame(note)
+tab2 = Frame(note)
+
+note.add(tab1, text="Tab 1")
+note.add(tab2, text="Tab 2")
+
+Label(tab1, text="This is Tab 1", fg="red", bg="white").pack()
+Label(tab2, text="This is Tab 2", fg="blue", bg="white").pack()
+
+note.pack(expand=True, fill="both")
+drome.mainloop()
+
+'''
