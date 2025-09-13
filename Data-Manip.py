@@ -41,6 +41,7 @@ print(y)
 
 '''
 
+Some Datasets contains text and data in the form of arrays. To extract this data, we use DataFrame.
 A python dataframe is a 2D datasetof a 2D array or a 2D matrix. If we want to access a specific row, we can use loc() function.
 If a dataframe is created using a dictionary, then the keys will be the column names.
 We can use multiple arguments with our dataset:
@@ -70,6 +71,8 @@ manupilate our data.
 
 8. If there are multiple arrays in a dataset having different keys (columns), we can use 'columns' parameter to set the columns we want 
 in our dataframe.
+
+9. We can use the variable.shape function to get the number of rows and columns in our dataframe made from our dataset.
 
 Example:
 
@@ -104,7 +107,6 @@ data = {
 
 frame = pd.DataFrame(data)
 print(frame)
-
 
 '''
 
