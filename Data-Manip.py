@@ -41,8 +41,9 @@ print(y)
 
 '''
 
-A python dataframe is a 2D datasetof a 2D array or a 2D matrix. We can use variable.loc() to return 1 or multiple rows. We can 
-use multiple arguments with our dataset:
+A python dataframe is a 2D datasetof a 2D array or a 2D matrix. If we want to access a specific row, we can use loc() function.
+If a dataframe is created using a dictionary, then the keys will be the column names.
+We can use multiple arguments with our dataset:
 
 1. head() : Prints first 5 rows of the dataset when used with print function.
 2. tail() : Prints last 5 rows of the dataset when used with print function.
@@ -58,12 +59,17 @@ specified number.
 
 3. A common way to replace empty cells is to calculate mean, median and mode of the columns.
 
-4. variable.loc[index , key] = Number : This will change the value at the location, it was given. We can also set conditions to
+4. variable.replace(new_val, old_val, inplace = TRUE) : This will change the value at the location, it was given. We can also set conditions to
 manupilate our data.
 
 5. The variable.drop_duplicates(inplace = True) function will remove all the duplicates from the dataset.
 
 6. the variable.isna() function will tell you how many null values are in dataset.
+
+7. If there are multiple arrays in a dataset, we can use the variable.astype() function to convert them into a single datatype.
+
+8. If there are multiple arrays in a dataset having different keys (columns), we can use 'columns' parameter to set the columns we want 
+in our dataframe.
 
 Example:
 
@@ -98,6 +104,7 @@ data = {
 
 frame = pd.DataFrame(data)
 print(frame)
+
 
 '''
 
