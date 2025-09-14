@@ -83,6 +83,10 @@ where,
 x is the array containing data
 y is the array containing labels
 
+11. If we want to add a column to our dataset we can add it by using:
+
+dataframe["Name_of_new_column"] = dataset.column_name[dataset.data_for_that_column]
+
 Example:
 
 import pandas as pd
