@@ -641,3 +641,28 @@ note.pack(expand=True, fill="both")
 drome.mainloop()
 
 '''
+
+# Grid:
+
+'''
+
+from tkinter import *
+
+griding = Tk()
+
+def submit():
+    print("Login Info saved")
+
+label1 = Label(griding, text="Enter your information" ,font=(20)).grid(row=0,column=0)
+
+label2 = Label(griding, text="Enter Your Email: ").grid(row=1,column=0)
+entry1 = Entry(griding).grid(row=1, column=1)
+
+label3 = Label(griding, text="Enter Your Password: ").grid(row=2,column=0)
+entry2 = Entry(griding).grid(row=2, column=1)
+
+Button(griding, text="Submit",command=submit).grid(row=3, column=0, columnspan=2)
+
+griding.mainloop()
+
+'''
