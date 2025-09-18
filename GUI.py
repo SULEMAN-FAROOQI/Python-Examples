@@ -666,3 +666,36 @@ Button(griding, text="Submit",command=submit).grid(row=3, column=0, columnspan=2
 griding.mainloop()
 
 '''
+
+# Progress Bar:
+
+'''
+
+from tkinter import *
+from tkinter.ttk import Progressbar
+import time
+
+Baring = Tk()
+Baring.title("Progress Bar")
+
+p = StringVar()
+
+def run():
+    for x in range(101): 
+        time.sleep(0.05)
+        bar['value'] = x
+        p.set(str(x) + "%")
+        Baring.update_idletasks()
+
+bar = Progressbar(Baring, orient=HORIZONTAL, length=300, mode='determinate')
+bar.pack(pady=10)
+
+label = Label(Baring, textvariable=p)
+label.pack()
+
+button = Button(Baring, text="Download", command=run)
+button.pack(pady=10)
+
+Baring.mainloop()
+
+'''
